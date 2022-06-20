@@ -1,0 +1,6 @@
+Contact: https://matrix.to/#/@lberrymage:matrix.org
+Contact: mailto:logan@lberrymage.dev
+Expires: 2023-06-19T08:00:00.000Z
+Preferred-Languages: en
+Canonical: https://accrescent.app/.well-known/security.txt
+Policy: https://github.com/accrescent/accrescent/blob/master/SECURITY.md
