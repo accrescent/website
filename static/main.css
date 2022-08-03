@@ -10,17 +10,34 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+h1 a, h1 a:visited,
+h2 a, h2 a:visited,
+h3 a, h3 a:visited,
+h4 a, h4 a:visited,
+h5 a, h5 a:visited, 
+h6 a, h6 a:visited {
     line-height: 1.2;
+    color: #ffffff;
+    text-decoration: none;
 }
 
-p {
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    text-decoration: underline;
+}
+
+p, ul {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 a, a:visited {
-    color: #eeeeee;
+    color: #ffffff;
 }
 
 ul {
@@ -80,12 +97,14 @@ footer {
 
 #site-menu {
     background-color: #212121;
+    margin: 0px 0px 1rem 0px;
     box-shadow: 0 2px 2px 0 rgba(0 0 0 / 14%), 0 1px 5px 0 rgba(0 0 0 / 12%), 0 3px 1px -2px rgba(0 0 0 / 20%);
     white-space: nowrap;
 }
 
 #site-menu ul li {
     display: flex;
+    padding-bottom: 0;
 }
 
 #site-menu ul li:hover {
@@ -103,4 +122,23 @@ footer {
 #navicon {
     border-radius: 50%;
     margin-right: 1em;
+}
+
+@media(prefers-color-scheme:light) {
+    body {
+        background-color: #fafafa;
+        color: #333;
+    }
+    a, a:visited {
+        color: #212121;
+    }
+    h1, h2, h3, h4, h5, h6,
+    h1 a, h1 a:visited,
+    h2 a, h2 a:visited,
+    h3 a, h3 a:visited,
+    h4 a, h4 a:visited,
+    h5 a, h5 a:visited, 
+    h6 a, h6 a:visited {
+        color: #212121;
+    }
 }
