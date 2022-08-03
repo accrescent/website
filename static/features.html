@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/#ns">
+    <head>
+        <meta charset="utf-8">
+        <title>Accrescent | Features</title>
+        <meta name="description" content="Notable features of Accrescent distinguishing it from other stores.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Accrescent">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://accrescent.app/accrescent.png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta property="og:image:alt" content="Accrescent logo">
+        <meta property="og:url" content="https://accrescent.app">
+        <meta property="og:description" content="Notable features of Accrescent distinguishing it from other stores.">
+        <meta property="og:site_name" content="Accrescent">
+        <meta name="twitter:site" content="@accrescentapp">
+        <meta name="twitter:creator" content="@accrescentapp">
+        <link rel="canonical" href="https://accrescent.app">
+        <link rel="stylesheet" href="/main.css">
+        <link rel="icon" href="/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <nav id="site-menu">
+                <ul>
+                    <li>
+                        <a href="/"><img id="navicon" src="/accrescent.svg" alt="" width="32" height="32">Accrescent</a>
+                    </li>
+                    <li><a href="/features">Features</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="center">
+                <img src="/accrescent.svg" alt="Accrescent icon" width="160" height="160" class="icon">
+            </div>
+            <div class="content">
+                <h1>Features</h1>
+
+                <p>The following is a list of notable features Accrescent currently has. It is not
+                exhaustive and not all features listed are exclusive to Accrescent, but they are
+                some of the more distinguishing features and are intended to give the reader an idea
+                of the benefits of Accrescent and how it works.</p>
+
+                <section id="signed-metadata">
+                    <h2><a href="#signed-metadata">Signed repository metadata</a></h2>
+
+                    <p><a href="https://store.accrescent.app">Accrescent's repository</a> contains
+                    metadata files used by the client to retrieve apps and display info about them
+                    to the user. One of these pieces of metadata is signed by a key hardcoded into
+                    Accrescent to protect against tampering of sensitive information in the event
+                    the server is compromised. This signed metadata is downgrade-protected, and a
+                    minimum revision hardcoded into Accrescent is regularly updated to protect new
+                    installations and sideloaded Accrescent updates from being served old
+                    metadata.</p>
+
+                    </p>Below is a list of what the signed metadata protects and the corresponding
+                    security implications for the user.</p>
+
+                    <section id="key-pinning">
+                        <h3><a href="#key-pinning">App signing key pinning</a></h3>
+
+                        <p>When a developer submits a new app to Accrescent, a hash of their app's
+                        public signing key is added to the signed repository metadata. This signing
+                        key hash is checked by the client every time it downloads the respective
+                        app. If it doesn't match, the installation is rejected.</p>
+
+                        <p>This check is unnecessary for updates since Android already enforces key
+                        pinning for app updates. However, the OS takes a trust-on-first-use approach
+                        and doesn't provide a mechanism to verify that the initial installation was
+                        signed by the proper certificate, so pinning the certificate in signed
+                        metadata ensures that even the first installation is legitimate.</p>
+                    </section>
+
+                    <section id="min-version">
+                        <h3><a href="#min-version">Minimum version pinning</a></h3>
+
+                        <p>Each app in the signed metadata has a minimum expected version which is
+                        updated regularly. Accrescent will refuse to install a version of a given
+                        app less than its minimum version.</p>
+
+                        <p>This check mitigates the threat of an attacker serving obsolete versions
+                        of apps. If a minimum version was not set, an attacker in control of the
+                        server could specify the latest version of a given app as an old version
+                        with known security vulnerabilities. Android already enforces downgrade
+                        protection for existing apps, so this threat is only applicable to users
+                        installing a given app for the first time.</p>
+                    </section>
+
+                    <section id="name-icon-verification">
+                        <h3><a href="#name-icon-verification">Name and icon verification</a></h3>
+
+                        <p>Accrescent stores app names and icon hashes in signed metadata. These are
+                        used to verify the app names and icons displayed to the user in the client
+                        UI.</p>
+
+                        <p>Signing these items makes it much more difficult for an attacker to trick
+                        a user into installing a malicious copycat app. If names and icons weren't
+                        verified, a malicious actor in control of the server could modify them and
+                        trick a user into installing a different app than they intend.</p>
+                    </section>
+                </section>
+
+                <section id="unattended-updates">
+                    <h2><a href="#unattended-updates">Unattended updates</a></h2>
+
+                    <p>Accrescent supports unattended updates with or without privileged integration
+                    into the OS. By default, it will prompt for confirmation the first time an app
+                    is installed and perform updates in the background without prompting
+                    thereafter.</p>
+
+                    <p>Accrescent also supports the privileged package management permissions on OSs
+                    which integrate it. When privileged, it will not prompt the user when installing
+                    or uninstalling apps.</p>
+                </section>
+
+                <section id="split-apks">
+                    <h2><a href="#split-apks">Split APK support</a></h2>
+
+                    <p>Accrescent serves all apps as split APKs. This means that native code for
+                    different architectures, images for different screen densities, and strings for
+                    different languages aren't downloaded for a given device, saving bandwidth.</p>
+                </section>
+
+                <section id="no-remote-signing">
+                    <h2><a href="#no-remote-signing">No remote APK signing</a></h2>
+
+                    <p>Accrescent doesn't sign apps itself. Developers sign (split) APKs with their
+                    own keys and upload them to Accrescent themselves.</p>
+
+                    <p>This measure allows developers to maintain exclusive control over their app
+                    signing keys. Developers' signing keys cannot be compromised if Accrescent's
+                    servers are and Accrescent cannot deliver modified updates to developers'
+                    apps.</p>
+                </section>
+
+                <section id="tls-cert-pinning">
+                    <h2><a href="#tls-cert-pinning">TLS certificate pinning</a></h2>
+
+                    <p>Accrescent pins Let's Encrypt root and intermediate TLS certificates for all
+                    connections to its <a href="https://store.accrescent.app">repository</a>. This
+                    feature mitigates the threat of a rogue/compromised certificate authority
+                    issuing a fraudulent certificate for the repository and initiating a
+                    man-in-the-middle attack.</p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy 2021-2022 Logan Magee
+        </footer>
+    </body>
+</html>
