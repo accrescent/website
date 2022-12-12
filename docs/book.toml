@@ -1,0 +1,6 @@
+[book]
+authors = ["lberrymage"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Accrescent Documentation"
