@@ -70,41 +70,9 @@
                     </h2>
 
                     <p>Accrescent has strict quality control measures to ensure the security and privacy
-                    of all submitted apps. They are separated into two categories: automatic and manual.
-                    Automatic checks are run whenever a developer submits an app, and, depending on the
-                    check, may cause the app to be immediately rejected or marked for manual review if
-                    it fails. Manual checks require a trusted reviewer to compare an app against
-                    documented rules to determine whether it should be rejected or accepted.</p>
-
-                    <p>This FAQ entry doesn't intend to cover all automatic checks and criteria for
-                    passing manual review since they have yet to be finalized. The full list will become
-                    available once the developer console comes online. However, below are a few samples
-                    of the checks and criteria that will be included.</p>
-
-                    <h3>Sample automatic checks:</h3>
-                    <ul>
-                        <li>New apps and app updates must target an SDK more than or equal to the <a
-                        href="https://support.google.com/googleplay/android-developer/answer/11926878">Play
-                        Store's Requirements</a>.</li>
-                        <li>Existing apps must target an SDK more than or equal to the Play Store's
-                            requirement for new apps minus 1. For example, if the Play Store requires
-                            new apps to target SDK 30 then Accrescent will remove an existing app if it
-                            targets SDK 28 or lower.</li>
-                        <li>Apps must not set the android:debuggable attribute in their manifests to
-                            "true."</li>
-                    </ul>
-
-                    <h3>Sample manual checks:</h3>
-                    <ul>
-                        <li>Apps requesting the MANAGE_EXTERNAL_STORAGE permission must require it as
-                            part of the app's core functionality (e.g. file manager apps).</li>
-                        <li>Apps requesting the BIND_ACCESSIBILITY_SERVICE permission must require it as
-                            part of the app's core functionality and should only be used to aid disabled
-                            users.</li>
-                    </ul>
-
-                    <p>Overall, Accrescent aims to meet or exceed the quality control requirements of the
-                    Play Store and uses them as a baseline.</p>
+                    of all submitted apps. For specific details on what these measures are, see the
+                    <a href="docs/guide/publish/requirements.html">requirements section</a> of the
+                    publishing documentation.
                 </section>
 
                 <section id="other-repos">
