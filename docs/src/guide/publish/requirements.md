@@ -109,6 +109,33 @@ of the following use cases:
 `REQUEST_INSTALL_PACKAGES` _may not_ be used for self-updating or updating or
 installing other apps.
 
+### Service intent filters
+
+Adding any of the following actions to a service's intent filter will trigger a
+manual review:
+
+- `android.accessibilityservice.AccessibilityService`
+- `android.net.VpnService`
+- `android.view.InputMethod`
+
+More specific requirements for the following actions are laid out below:
+
+- `android.accessibilityservice.AccessibilityService`
+- `android.net.VpnService`
+
+#### `android.accessibilityservice.AccessibilityService`
+
+Accessibility services are highly invasive, presenting a security and privacy
+risk to users. As such, they are heavily restricted on Accrescent and may only
+be used to help users with disabilities interact with the device.
+
+#### `android.net.VpnService`
+
+VPN services may only be used by apps that have a VPN as their core
+functionality. They _must_ encrypt all data between the device and the VPN
+tunnel endpoint. They _may not_ be used to collect sensitive user data without
+informed consent.
+
 [`android:debuggable`]: https://developer.android.com/guide/topics/manifest/application-element#debug
 [`android:usesCleartextTraffic`]: https://developer.android.com/guide/topics/manifest/application-element#usesCleartextTraffic
 [GitHub repository]: https://github.com/accrescent/accrescent.app
