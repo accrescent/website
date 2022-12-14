@@ -35,7 +35,7 @@ newly requested and Accrescent considers it to be a sensitive permission, that
 update will require manual review.
 
 Continuing the example, let's say that update is approved and the developer
-uploads anoter update requesting the `READ_SMS` and `MANAGE_EXTERNAL_STORAGE`
+uploads another update requesting the `READ_SMS` and `MANAGE_EXTERNAL_STORAGE`
 permissions. Since the app was previously approved to request both of these
 permissions, the second update will not require manual review and will instead
 be published immediately after the developer submits it.
