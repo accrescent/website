@@ -1,7 +1,5 @@
 # Requirements
 
-## Introduction
-
 Accrescent has certain minimum requirements for all apps submitted to it to
 ensure the privacy and security of its users. This page documents these
 requirements for developers to reference before submitting their app so they
