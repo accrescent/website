@@ -45,6 +45,12 @@ be "true". This check may move to manual review in the future.
 The following are checks done by reviewers in reference to this document when
 manually reviewing an app.
 
+### Debug certificate
+
+Apps may not be signed with a debug certificate. They are [insecure by design]
+and so are not permitted in Accrescent. This check [will eventually be
+automated].
+
 ### Sensitive permissions
 
 Addition of any of the following permissions in an app update will trigger a
@@ -138,5 +144,7 @@ informed consent.
 [`android:usesCleartextTraffic`]: https://developer.android.com/guide/topics/manifest/application-element#usesCleartextTraffic
 [GitHub repository]: https://github.com/accrescent/accrescent.app
 [Google Play's target SDK requirements]: https://support.google.com/googleplay/android-developer/answer/11926878
+[insecure by design]: https://developer.android.com/studio/publish/app-signing#debug-mode
 [`MediaStore` API]: https://developer.android.com/training/data-storage/shared/media
 [Storage Access Framework]: https://developer.android.com/guide/topics/providers/document-provider
+[will eventually be automated]: https://github.com/accrescent/devconsole/issues/34
