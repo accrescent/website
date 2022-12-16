@@ -17,6 +17,10 @@ The following checks are run automatically on all apps before the developer
 submits them. If any of them fail, an error will show in the developer console
 and the app cannot be submitted.
 
+#### App size
+
+The size of the uploaded APK set must be no more than 128 MiB.
+
 #### Bundletool version
 
 The `bundletool` version used to generate uploaded APK sets must be `1.13.1` or
