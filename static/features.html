@@ -49,14 +49,14 @@
                 <section id="signed-metadata">
                     <h2><a href="#signed-metadata">Signed repository metadata</a></h2>
 
-                    <p><a href="https://store.accrescent.app">Accrescent's repository</a> contains
-                    metadata files used by the client to retrieve apps and display info about them
-                    to the user. One of these pieces of metadata is signed by a key hardcoded into
-                    Accrescent to protect against tampering of sensitive information in the event
-                    the server is compromised. This signed metadata supports key rotation, is
-                    downgrade-protected, and a minimum revision hardcoded into Accrescent is
-                    regularly updated to protect new installations and sideloaded Accrescent updates
-                    from being served old metadata.</p>
+                    <p>Accrescent's repository contains metadata files used by the client to
+                    retrieve apps and display info about them to the user. One of these pieces of
+                    metadata is signed by a key hardcoded into Accrescent to protect against
+                    tampering of sensitive information in the event the server is compromised. This
+                    signed metadata supports key rotation, is downgrade-protected, and a minimum
+                    revision hardcoded into Accrescent is regularly updated to protect new
+                    installations and sideloaded Accrescent updates from being served old
+                    metadata.</p>
 
                     </p>Below is a list of what the signed metadata protects and the corresponding
                     security implications for the user.</p>
@@ -142,10 +142,9 @@
                     <h2><a href="#tls-cert-pinning">TLS certificate pinning</a></h2>
 
                     <p>Accrescent pins Let's Encrypt root and intermediate TLS certificates for all
-                    connections to its <a href="https://store.accrescent.app">repository</a>. This
-                    feature mitigates the threat of a rogue/compromised certificate authority
-                    issuing a fraudulent certificate for the repository and initiating a
-                    man-in-the-middle attack.</p>
+                    connections to its repository. This feature mitigates the threat of a
+                    rogue/compromised certificate authority issuing a fraudulent certificate for the
+                    repository and initiating a man-in-the-middle attack.</p>
                 </section>
 
                 <section id="no-accounts">
