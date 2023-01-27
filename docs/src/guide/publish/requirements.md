@@ -81,6 +81,7 @@ manual review and their usage will also be reviewed in new apps:
 - `RECEIVE_MMS`
 - `RECEIVE_SMS`
 - `RECEIVE_WAP_PUSH`
+- `RECORD_AUDIO`
 - `REQUEST_INSTALL_PACKAGES`
 - `SEND_SMS`
 - `WRITE_CALL_LOG`
