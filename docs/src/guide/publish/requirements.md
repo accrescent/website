@@ -86,6 +86,7 @@ manual review and their usage will also be reviewed in new apps:
 - `SEND_SMS`
 - `WRITE_CALL_LOG`
 - `WRITE_CONTACTS`
+- `SYSTEM_ALERT_WINDOW`
 
 Review will fail if an app requests a permission it does not reasonably require
 to function or uses a permission to share sensitive user data without informed
