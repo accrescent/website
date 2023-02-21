@@ -23,7 +23,7 @@ The size of the uploaded APK set must be no more than 128 MiB.
 
 #### Bundletool version
 
-The `bundletool` version used to generate uploaded APK sets must be `1.13.1` or
+The `bundletool` version used to generate uploaded APK sets must be `1.11.4` or
 newer to ensure Accrescent can take advantage of newer features.
 
 #### Target SDK
