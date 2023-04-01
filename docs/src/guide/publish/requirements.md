@@ -1,12 +1,12 @@
 # Requirements
 
-Accrescent has certain minimum requirements for all apps submitted to it to
+Accroissant has certain minimum requirements for all apps submitted to it to
 ensure the privacy and security of its users. This page documents these
 requirements for developers to reference before submitting their app so they
 know how to best improve their chances for acceptance.
 
-These requirements are not exhaustive and Accrescent reserves the right to
-modify them at any time. However, the Accrescent developers attempt to make this
+These requirements are not exhaustive and Accroissant reserves the right to
+modify them at any time. However, the Accroissant developers attempt to make this
 list as thorough as possible and give notice to developers well in advance for
 major requirement updates. If you see something missing or incorrect, please
 submit a pull request at this site's [GitHub repository].
@@ -24,15 +24,15 @@ The size of the uploaded APK set must be no more than 128 MiB.
 #### Bundletool version
 
 The `bundletool` version used to generate uploaded APK sets must be `1.11.4` or
-newer to ensure Accrescent can take advantage of newer features.
+newer to ensure Accroissant can take advantage of newer features.
 
 #### Target SDK
 
-Accrescent currently follows [Google Play's target SDK requirements] with a few
+Accroissant currently follows [Google Play's target SDK requirements] with a few
 major changes:
 
 - there are no formal timeline extension requests
-- Accrescent will _remove_ apps when they don't meet the target SDK requirements
+- Accroissant will _remove_ apps when they don't meet the target SDK requirements
   for existing apps, not just make them less discoverable
 
 #### `android:debuggable`
@@ -52,7 +52,7 @@ manually reviewing an app.
 ### Debug certificate
 
 Apps may not be signed with a debug certificate. They are [insecure by design]
-and so are not permitted in Accrescent. This check [will eventually be
+and so are not permitted in Accroissant. This check [will eventually be
 automated].
 
 ### Sensitive permissions
@@ -136,7 +136,7 @@ More specific requirements for the following actions are laid out below:
 #### `android.accessibilityservice.AccessibilityService`
 
 Accessibility services are highly invasive, presenting a security and privacy
-risk to users. As such, they are heavily restricted on Accrescent and may only
+risk to users. As such, they are heavily restricted on Accroissant and may only
 be used to help users with disabilities interact with the device.
 
 #### `android.net.VpnService`

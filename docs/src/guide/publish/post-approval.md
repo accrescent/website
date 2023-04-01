@@ -4,11 +4,11 @@
 
 <img
     src="https://accrescent.app/badges/get-it-on.png"
-    alt="Get it on Accrescent"
+    alt="Get it on Accroissant"
     width="323"
     height="125">
 
 You can generate a clickable badge to advertise your app's presence on
-Accrescent from the developer console. To do so, go to "My apps" and click
+Accroissant from the developer console. To do so, go to "My apps" and click
 "More" on the app want to generate a badge for. You'll be presented with a
 preview and with HTML source code to put on your website.
