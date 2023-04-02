@@ -2,18 +2,18 @@
 <html lang="en" prefix="og: https://ogp.me/#ns">
     <head>
         <meta charset="utf-8">
-        <title>Accroissant | Features</title>
-        <meta name="description" content="Notable features of Accroissant distinguishing it from other stores.">
+        <title>Accrescent | Features</title>
+        <meta name="description" content="Notable features of Accrescent distinguishing it from other stores.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Accroissant">
+        <meta property="og:title" content="Accrescent">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://accrescent.app/accrescent.png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
-        <meta property="og:image:alt" content="Accroissant logo">
+        <meta property="og:image:alt" content="Accrescent logo">
         <meta property="og:url" content="https://accrescent.app">
-        <meta property="og:description" content="Notable features of Accroissant distinguishing it from other stores.">
-        <meta property="og:site_name" content="Accroissant">
+        <meta property="og:description" content="Notable features of Accrescent distinguishing it from other stores.">
+        <meta property="og:site_name" content="Accrescent">
         <meta name="twitter:site" content="@accrescentapp">
         <meta name="twitter:creator" content="@accrescentapp">
         <link rel="canonical" href="https://accrescent.app">
@@ -25,7 +25,7 @@
             <nav id="site-menu">
                 <ul>
                     <li>
-                        <a href="/"><img id="navicon" src="/accrescent.svg" alt="" width="32" height="32">Accroissant</a>
+                        <a href="/"><img id="navicon" src="/accrescent.svg" alt="" width="32" height="32">Accrescent</a>
                     </li>
                     <li><a href="/features">Features</a></li>
                     <li><a href="/faq">FAQ</a></li>
@@ -36,26 +36,26 @@
         </header>
         <main>
             <div class="center">
-                <img src="/accrescent.svg" alt="Accroissant icon" width="160" height="160" class="icon">
+                <img src="/accrescent.svg" alt="Accrescent icon" width="160" height="160" class="icon">
             </div>
             <div class="content">
                 <h1>Features</h1>
 
-                <p>The following is a list of notable features Accroissant currently has. It is not
-                exhaustive and not all features listed are exclusive to Accroissant, but they are
+                <p>The following is a list of notable features Accrescent currently has. It is not
+                exhaustive and not all features listed are exclusive to Accrescent, but they are
                 some of the more distinguishing features and are intended to give the reader an idea
-                of the benefits of Accroissant and how it works.</p>
+                of the benefits of Accrescent and how it works.</p>
 
                 <section id="signed-metadata">
                     <h2><a href="#signed-metadata">Signed repository metadata</a></h2>
 
-                    <p>Accroissant's repository contains metadata files used by the client to
+                    <p>Accrescent's repository contains metadata files used by the client to
                     retrieve apps and display info about them to the user. One of these pieces of
-                    metadata is signed by a key hardcoded into Accroissant to protect against
+                    metadata is signed by a key hardcoded into Accrescent to protect against
                     tampering of sensitive information in the event the server is compromised. This
                     signed metadata supports key rotation, is downgrade-protected, and a minimum
-                    revision hardcoded into Accroissant is regularly updated to protect new
-                    installations and sideloaded Accroissant updates from being served old
+                    revision hardcoded into Accrescent is regularly updated to protect new
+                    installations and sideloaded Accrescent updates from being served old
                     metadata.</p>
 
                     </p>Below is a list of what the signed metadata protects and the corresponding
@@ -64,7 +64,7 @@
                     <section id="key-pinning">
                         <h3><a href="#key-pinning">App signing key pinning</a></h3>
 
-                        <p>When a developer submits a new app to Accroissant, a hash of their app's
+                        <p>When a developer submits a new app to Accrescent, a hash of their app's
                         public signing key is added to the signed repository metadata. This signing
                         key hash is checked by the client every time it downloads the respective
                         app. If it doesn't match, the installation is rejected.</p>
@@ -80,7 +80,7 @@
                         <h3><a href="#min-version">Minimum version pinning</a></h3>
 
                         <p>Each app in the signed metadata has a minimum expected version which is
-                        updated regularly. Accroissant will refuse to install a version of a given
+                        updated regularly. Accrescent will refuse to install a version of a given
                         app less than its minimum version.</p>
 
                         <p>This check mitigates the threat of an attacker serving obsolete versions
@@ -94,7 +94,7 @@
                     <section id="name-icon-verification">
                         <h3><a href="#name-icon-verification">Name and icon verification</a></h3>
 
-                        <p>Accroissant stores app names and icon hashes in signed metadata. These are
+                        <p>Accrescent stores app names and icon hashes in signed metadata. These are
                         used to verify the app names and icons displayed to the user in the client
                         UI.</p>
 
@@ -108,12 +108,12 @@
                 <section id="unattended-updates">
                     <h2><a href="#unattended-updates">Unattended updates</a></h2>
 
-                    <p>Accroissant supports unattended updates with or without privileged integration
+                    <p>Accrescent supports unattended updates with or without privileged integration
                     into the OS. By default, it will prompt for confirmation the first time an app
                     is installed and perform updates in the background without prompting
                     thereafter.</p>
 
-                    <p>Accroissant also supports the privileged package management permissions on OSs
+                    <p>Accrescent also supports the privileged package management permissions on OSs
                     which integrate it. When privileged, it will not prompt the user when installing
                     or uninstalling apps.</p>
                 </section>
@@ -121,7 +121,7 @@
                 <section id="split-apks">
                     <h2><a href="#split-apks">Split APK support</a></h2>
 
-                    <p>Accroissant serves all apps as split APKs. This means that native code for
+                    <p>Accrescent serves all apps as split APKs. This means that native code for
                     different architectures, images for different screen densities, and strings for
                     different languages aren't downloaded for a given device, saving bandwidth.</p>
                 </section>
@@ -129,19 +129,19 @@
                 <section id="no-remote-signing">
                     <h2><a href="#no-remote-signing">No remote APK signing</a></h2>
 
-                    <p>Accroissant doesn't sign apps itself. Developers sign (split) APKs with their
-                    own keys and upload them to Accroissant themselves.</p>
+                    <p>Accrescent doesn't sign apps itself. Developers sign (split) APKs with their
+                    own keys and upload them to Accrescent themselves.</p>
 
                     <p>This measure allows developers to maintain exclusive control over their app
-                    signing keys. Developers' signing keys cannot be compromised if Accroissant's
-                    servers are and Accroissant cannot deliver modified updates to developers'
+                    signing keys. Developers' signing keys cannot be compromised if Accrescent's
+                    servers are and Accrescent cannot deliver modified updates to developers'
                     apps.</p>
                 </section>
 
                 <section id="tls-cert-pinning">
                     <h2><a href="#tls-cert-pinning">TLS certificate pinning</a></h2>
 
-                    <p>Accroissant pins Let's Encrypt root and intermediate TLS certificates for all
+                    <p>Accrescent pins Let's Encrypt root and intermediate TLS certificates for all
                     connections to its repository. This feature mitigates the threat of a
                     rogue/compromised certificate authority issuing a fraudulent certificate for the
                     repository and initiating a man-in-the-middle attack.</p>
@@ -150,8 +150,8 @@
                 <section id="no-accounts">
                     <h2><a href="#no-accounts">No accounts</a></h2>
 
-                    <p>Accroissant doesn't have user accounts. Users can simply install the store and
-                    use it. This design makes Accroissant more accessible and more private since user
+                    <p>Accrescent doesn't have user accounts. Users can simply install the store and
+                    use it. This design makes Accrescent more accessible and more private since user
                     accounts can often be used to track user behavior.</p>
 
                     <p>Note that developers still need to create accounts on the

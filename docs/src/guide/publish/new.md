@@ -22,7 +22,7 @@ chances of being accepted, please review the [app requirements] later in this
 guide before submitting.
 
 If the app is accepted, it will be passed on to have its metadata
-cryptographically signed into the store. This process ensures Accroissant's
+cryptographically signed into the store. This process ensures Accrescent's
 security even if one of its servers is compromised. You don't need to do
 anything at this point. Once your app is published, you will be notified and it
 will show up under "My apps" in the developer console
