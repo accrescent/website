@@ -15,6 +15,11 @@ information about your app. You may edit the display name if you wish. This is
 the name that will appear to users in the store. Once you're satisfied that your
 app's information is correct, click "Submit" to begin the review process.
 
+If some or all of your app's functionality requires authentication to access,
+please provide test account credentials for the review process. This is
+currently not possible within the developer console, so you will need to contact
+the Accrescent team directly to provide them.
+
 ## After you submit
 
 A reviewer will be assigned to your app after you submit it. To increase its
