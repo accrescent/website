@@ -55,6 +55,14 @@ Apps may not be signed with a debug certificate. They are [insecure by design]
 and so are not permitted in Accrescent. This check [will eventually be
 automated].
 
+### Self-updaters
+
+Apps may not have self-updaters. This includes improper use of the
+`REQUEST_INSTALL_PACKAGES` permission as outlined below, downloaders which
+prompt the user to update from an APK, and direct links to sources which may
+encourage or confuse the user into updating from a location outside of
+Accrescent.
+
 ### Sensitive permissions
 
 Addition of any of the following permissions in an app update will trigger a
