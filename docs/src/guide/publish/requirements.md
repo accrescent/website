@@ -39,6 +39,10 @@ major changes:
 
 The [`android:debuggable`] attribute in the Android manifest must not be "true".
 
+#### `android:testOnly`
+
+The [`android:testOnly`] attribute in the Android manifset must not be "true".
+
 #### `android:usesCleartextTraffic`
 
 The [`android:usesCleartextTraffic`] attribute in the Android manifest must not
@@ -155,6 +159,7 @@ tunnel endpoint. They _may not_ be used to collect sensitive user data without
 informed consent.
 
 [`android:debuggable`]: https://developer.android.com/guide/topics/manifest/application-element#debug
+[`android:testOnly`]: https://developer.android.com/guide/topics/manifest/application-element#testOnly
 [`android:usesCleartextTraffic`]: https://developer.android.com/guide/topics/manifest/application-element#usesCleartextTraffic
 [GitHub repository]: https://github.com/accrescent/accrescent.app
 [Google Play's target SDK requirements]: https://support.google.com/googleplay/android-developer/answer/11926878
