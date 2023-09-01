@@ -27,12 +27,12 @@ See [Google's documentation] for how to build an app bundle (note: signing the
 bundle with an upload key is not necessary since the split APKs are signed later
 and are what is actually uploaded to Accrescent).
 
-To build an APK set (set of split APKs) from `bundletool`, see [`bundletool's
-documentation`]. Be sure to provide a non-debug keystore to the `build-apks`
+To build an APK set (set of split APKs) from `bundletool`, see [`bundletool`'s
+documentation]. Be sure to provide a non-debug keystore to the `build-apks`
 command. The resulting APK set (`.apks` file) is what you will upload to the
 developer console.
 
 [`bundletool`]: https://developer.android.com/studio/command-line/bundletool
-[`bundletool's documentation`]: https://developer.android.com/studio/command-line/bundletool#generate_apks
+[`bundletool`'s documentation]: https://developer.android.com/studio/command-line/bundletool#generate_apks
 [GitHub releases]: https://github.com/google/bundletool/releases
 [Google's documentation]: https://medium.com/androiddevelopers/building-your-first-app-bundle-bbcd228bf631
