@@ -88,6 +88,18 @@ footer {
     padding-bottom: 0.75rem;
 }
 
+.qr-code {
+    display: block;
+    margin-top: 1rem;
+}
+
+.qr-code img {
+    width: 160px;
+    height: 160px;
+    border-radius: 8%;
+    image-rendering: pixelated;
+}
+
 #site-menu ul {
     display: flex;
     flex-wrap: nowrap;

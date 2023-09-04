@@ -6,6 +6,10 @@
         <loc>https://accrescent.app/</loc>
     </url>
     <url>
+        <loc>https://accrescent.app/donate</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://accrescent.app/features</loc>
         <priority>1.0</priority>
     </url>
