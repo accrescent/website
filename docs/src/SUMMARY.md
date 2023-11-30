@@ -10,4 +10,5 @@
     - [New apps](guide/publish/new.md)
     - [Post-approval](guide/publish/post-approval.md)
     - [App updates](guide/publish/update.md)
+    - [App edits](guide/publish/edits.md)
     - [Requirements](guide/publish/requirements.md)
