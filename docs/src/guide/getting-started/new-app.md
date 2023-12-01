@@ -1,4 +1,4 @@
-# New apps
+# Submitting a new app
 
 ## Submission process
 
@@ -32,5 +32,5 @@ security even if one of its servers is compromised. You don't need to do
 anything at this point. Once your app is published, you will be notified and it
 will show up under "My apps" in the developer console
 
-[app requirements]: requirements.md
+[app requirements]: ../appendix/requirements.md
 [generate one in Android Studio]: https://developer.android.com/studio/write/image-asset-studio#create-adaptive

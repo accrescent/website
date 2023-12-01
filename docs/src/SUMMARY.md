@@ -4,11 +4,15 @@
 
 # Developer Guide
 
-- [Publishing](guide/publish.md)
-    - [Getting started](guide/publish/getting-started.md)
-    - [Building an app](guide/publish/building.md)
-    - [New apps](guide/publish/new.md)
-    - [Post-approval](guide/publish/post-approval.md)
-    - [App updates](guide/publish/update.md)
-    - [App edits](guide/publish/edits.md)
-    - [Requirements](guide/publish/requirements.md)
+- [Getting started](guide/getting-started/README.md)
+    - [Building an app](guide/getting-started/building.md)
+    - [Submitting a new app](guide/getting-started/new-app.md)
+    - [Post-approval](guide/getting-started/post-approval.md)
+- [Maintaining a published app](guide/maintenance/README.md)
+    - [App updates](guide/maintenance/updates.md)
+    - [App edits](guide/maintenance/edits.md)
+
+---
+
+- [Appendix](guide/appendix/README.md)
+    - [Publishing requirements](guide/appendix/requirements.md)
