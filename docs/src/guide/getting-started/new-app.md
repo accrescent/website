@@ -1,5 +1,16 @@
 # Submitting a new app
 
+## Creating an account
+
+To submit an app to Accrescent, you first need to create an account on the [developer console].
+Currently login with GitHub is the only supported login method.
+
+Sign-up is not yet available to the general public and is only permitted for allowlisted GitHub
+accounts. This choice was made to ensure that all developers on Accrescent are willing to tolerate
+the lackluster user experience, console bugs, and frequent policy changes resultant of Accrescent
+being in its early stages. If you are not allowlisted and are still interested in publishing on
+Accrescent, you may contact us at <contact@accrescent.app> to request being allowlisted.
+
 ## Submission process
 
 To upload a new app, click the "New app" button on your dashboard. You will be
@@ -33,4 +44,5 @@ anything at this point. Once your app is published, you will be notified and it
 will show up under "My apps" in the developer console
 
 [app requirements]: ../appendix/requirements.md
+[developer console]: https://dev.accrescent.app
 [generate one in Android Studio]: https://developer.android.com/studio/write/image-asset-studio#create-adaptive
