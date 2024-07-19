@@ -26,6 +26,11 @@ The size of the uploaded APK set must be no more than 128 MiB.
 The `bundletool` version used to generate uploaded APK sets must be `1.11.4` or
 newer to ensure Accrescent can take advantage of newer features.
 
+#### Debug certificate
+
+Apps may not be signed with a debug certificate. They are [insecure by design]
+and so are not permitted in Accrescent.
+
 #### Target SDK
 
 Accrescent currently follows [Google Play's target SDK requirements] with a few
@@ -52,12 +57,6 @@ be "true". This check may move to manual review in the future.
 
 The following are checks done by reviewers in reference to this document when
 manually reviewing an app.
-
-### Debug certificate
-
-Apps may not be signed with a debug certificate. They are [insecure by design]
-and so are not permitted in Accrescent. This check [will eventually be
-automated].
 
 ### Self-updaters
 
@@ -166,4 +165,3 @@ informed consent.
 [insecure by design]: https://developer.android.com/studio/publish/app-signing#debug-mode
 [`MediaStore` API]: https://developer.android.com/training/data-storage/shared/media
 [Storage Access Framework]: https://developer.android.com/guide/topics/providers/document-provider
-[will eventually be automated]: https://github.com/accrescent/devconsole/issues/34
