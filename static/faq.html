@@ -115,7 +115,14 @@
                 <section id="verifying">
                     <h2><a href="#verifying">How can I verify my download of Accrescent is legitimate?</a></h2>
 
-                    <p>Accrescent's signing certificate hash can be verified by using
+                    <p>If using <a href="https://grapheneos.org">GrapheneOS</a>, the recommended
+                    method to verify Accrescent is to install it from the GrapheneOS App Store. This
+                    approach chains the verification of Accrescent to the OS, which can in turn be
+                    chained to a hardware root of trust through verified boot and GrapheneOS'
+                    Auditor app.</p>
+
+                    <p>For other Accrescent users, Accrescent's signing certificate hash can be
+                    verified by using
                     <a href="https://developer.android.com/studio/command-line/apksigner#usage-verify">apksigner</a>
                     with the <code>--print-certs</code> option. Certificate hashes are published here,
                     <a href="https://github.com/accrescent/accrescent#signing-certificate-hash">on GitHub</a>,
