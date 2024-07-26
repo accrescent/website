@@ -57,8 +57,8 @@ The resulting APK set will be generated as
 
 #### Installation
 
-`bundletool` can be installed from its [GitHub releases]. There's also an AUR
-package for Arch Linux users.
+`bundletool` can be installed from its [GitHub releases]. There's also an [AUR
+package] for Arch Linux users.
 
 #### Building
 
@@ -76,6 +76,7 @@ documentation]. Be sure to provide a non-debug keystore to the `build-apks`
 command. The resulting APK set (`.apks` file) is what you will upload to the
 developer console.
 
+[AUR package]: https://aur.archlinux.org/packages/bundletool
 [`bundletool`]: https://developer.android.com/studio/command-line/bundletool
 [`bundletool`'s documentation]: https://developer.android.com/studio/command-line/bundletool#generate_apks
 [`bundletool` Gradle plugin]: https://github.com/accrescent/bundletool-gradle-plugin
