@@ -21,11 +21,6 @@ and the app cannot be submitted.
 
 The size of the uploaded APK set must be no more than 128 MiB.
 
-#### Bundletool version
-
-The `bundletool` version used to generate uploaded APK sets must be `1.11.4` or
-newer to ensure Accrescent can take advantage of newer features.
-
 #### Debug certificate
 
 Apps may not be signed with a debug certificate. They are [insecure by design]
