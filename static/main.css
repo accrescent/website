@@ -6,7 +6,7 @@
 body {
     background-color: #212121;
     color: #eeeeee;
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     line-height: 1.5;
 }
 
