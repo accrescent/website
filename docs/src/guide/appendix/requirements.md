@@ -26,6 +26,21 @@ The size of the uploaded APK set must be no more than 128 MiB.
 Apps may not be signed with a debug certificate. They are [insecure by design]
 and so are not permitted in Accrescent.
 
+#### Native code
+
+Accrescent supports the following architectures:
+
+- arm64
+- armeabi-v7a
+- x86_64
+- x86
+
+Apps containing 32-bit native code for a supported architecture must also include 64-bit native code
+for the corresponding architecture. Additionally, apps containing native code must support at least
+one of Accrescent's supported architectures.
+
+For more information, see [Google's documentation on 64-bit support].
+
 #### Target SDK
 
 Accrescent currently follows [Google Play's target SDK requirements] with a few
@@ -157,6 +172,7 @@ informed consent.
 [`android:usesCleartextTraffic`]: https://developer.android.com/guide/topics/manifest/application-element#usesCleartextTraffic
 [GitHub repository]: https://github.com/accrescent/accrescent.app
 [Google Play's target SDK requirements]: https://support.google.com/googleplay/android-developer/answer/11926878
+[Google's documentation on 64-bit support]: https://developer.android.com/google/play/requirements/64-bit
 [insecure by design]: https://developer.android.com/studio/publish/app-signing#debug-mode
 [`MediaStore` API]: https://developer.android.com/training/data-storage/shared/media
 [Storage Access Framework]: https://developer.android.com/guide/topics/providers/document-provider
