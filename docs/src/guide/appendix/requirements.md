@@ -54,11 +54,6 @@ The [`android:debuggable`] attribute in the Android manifest must not be "true".
 
 The [`android:testOnly`] attribute in the Android manifset must not be "true".
 
-#### `android:usesCleartextTraffic`
-
-The [`android:usesCleartextTraffic`] attribute in the Android manifest must not
-be "true". This check may move to manual review in the future.
-
 ## Manual checks
 
 The following are checks done by reviewers in reference to this document when
@@ -165,7 +160,6 @@ informed consent.
 
 [`android:debuggable`]: https://developer.android.com/guide/topics/manifest/application-element#debug
 [`android:testOnly`]: https://developer.android.com/guide/topics/manifest/application-element#testOnly
-[`android:usesCleartextTraffic`]: https://developer.android.com/guide/topics/manifest/application-element#usesCleartextTraffic
 [GitHub repository]: https://github.com/accrescent/accrescent.app
 [Google Play's target SDK requirements]: https://support.google.com/googleplay/android-developer/answer/11926878
 [Google's documentation on 64-bit support]: https://developer.android.com/google/play/requirements/64-bit
