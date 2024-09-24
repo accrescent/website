@@ -59,6 +59,13 @@ The [`android:testOnly`] attribute in the Android manifset must not be "true".
 The following are checks done by reviewers in reference to this document when
 manually reviewing an app.
 
+### Root access
+
+Apps may not utilize root access for any functionality. This includes apps which
+attempt to exploit the current device to gain root access as well as apps which
+access privileged functionality only available due to previously rooting the
+device.
+
 ### Self-updaters
 
 Apps may not have self-updaters. This includes improper use of the
