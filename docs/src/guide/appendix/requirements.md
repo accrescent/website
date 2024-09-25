@@ -59,6 +59,12 @@ The [`android:testOnly`] attribute in the Android manifset must not be "true".
 The following are checks done by reviewers in reference to this document when
 manually reviewing an app.
 
+### ADB access
+
+Utilizing ADB (Android Debug Bridge) directly or indirectly within an app is
+strictly forbidden. This restriction includes, but is not limited to using a
+proxy like Shizuku or directly using wireless debugging.
+
 ### Root access
 
 Apps may not utilize root access for any functionality. This includes apps which
