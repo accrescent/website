@@ -1,0 +1,158 @@
+{
+    "version": "v1.0.0",
+    "entity": {
+        "type": "organisation",
+        "role": "owner",
+        "name": "Accrescent",
+        "email": "contact@accrescent.app",
+        "description": "Hi there! We're Accrescent, an organization dedicated to building a modern Android app store focused on security, privacy, and usability.\n\nWe've been working on Accrescent since 2021 to improve security and privacy for everyday Android users. It is currently in alpha and is now serving about 20 apps submitted by a select number of developers to over 16,000 users worldwide.\n\nTo continue this work and grow Accrescent beyond alpha to accept apps from everyone, we need your help. Without sponsorship, our lead developer, lberrymage (https://github.com/lberrymage), is paying for Accrescent's development out of his own pocket. Your donations directly sustain Accrescent by covering continuing costs for servers, development work, and maintenance.\n\nBecause costs are continuing, even the smallest donation helps. Whatever you choose to give, thank you ❤️.",
+        "webpageUrl": {
+            "url": "https://accrescent.app"
+        }
+    },
+    "projects": [
+        {
+            "guid": "accrescent",
+            "name": "Accrescent",
+            "description": "Accrescent is a novel Android app store focus on security, privacy, and usability. It is built around modern Android features to deliver a pleasant user experience while enforcing modern security and privacy practices and offering robust validity guarantees for installed apps.\n\nThis project represents the Accrescent client app which runs on users' Android devices.\n\nSome of Accrescent's features include:\n\n- App signing key pinning: first-time app installs are verified so you don't have to trust our servers\n- Signed server metadata: server contents are cryptographically protected against malicious tampering\n- Automatic, unattended, unprivileged updates (Android 12+): updates are handles seamlessly in the background without relying on privileged OS integration\n- Designed for split APKs: downloaded APKs are optimized for your device to save bandwidth\n- No remote APK signing: developers are in full control of their app signing keys\n- No account required: users don't need an account to install apps, improving privacy\n\nFor more details, see our features page at https://accrescent.app/features.",
+            "webpageUrl": {
+                "url": "https://accrescent.app"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/accrescent/accrescent",
+                "wellKnown": "https://github.com/accrescent/accrescent/blob/master/.well-known/funding-manifest-urls"
+            },
+            "licenses": ["spdx:ISC"],
+            "tags": ["android", "security", "privacy", "appstore", "mobile"]
+        },
+        {
+            "guid": "parcelo",
+            "name": "Parcelo",
+            "description": "Parcelo is the primary server technology which powers Accrescent, a novel Android app store focused on security, privacy, and usability. It includes the developer console server and the console web frontend through which developers upload and manage their apps published to Accrescent. Parcelo currently features:\n\n- GitHub account login\n- User registration allowlisting\n- New app submissions, app updates, and description edits\n- Conditional manual reviews for app updates\n- Remote repository publishing\n\n...and more.\n\nSupporting Accrescent allows us to continue developing Parcelo to enable Accrescent to be the secure and featureful app store we envision.",
+            "webpageUrl": {
+                "url": "https://accrescent.app"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/accrescent/parcelo",
+                "wellKnown": "https://github.com/accrescent/parcelo/blob/main/.well-known/funding-manifest-urls"
+            },
+            "licenses": ["spdx:AGPL-3.0-only"],
+            "tags": ["android", "security", "privacy", "appstore", "server"]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "github-sponsors",
+                "type": "other",
+                "address": "https://github.com/sponsors/accrescent",
+                "description": "Monthly or one-time payments with a debit or credit card through GitHub Sponsors. This is our preferred payment channel."
+            },
+            {
+                "guid": "monero",
+                "type": "other",
+                "address": "8AsSJ4LMLYHBQxzMXfotoxb6H7knjnzz6XnY1ymrpLBof1SgqJJHPkEbKXiCxVf54STpqmXWJE5hscTK9xLWjkBM3mWDujR",
+                "description": "Monero cryptocurrency adddress."
+            },
+            {
+                "guid": "bitcoin-taproot",
+                "type": "other",
+                "address": "bc1pq3xals26t8qdqlzmpyuvdnlel06q8vpk9tu29rcdfnde83elnc8qamypuj",
+                "description": "Bitcoin Taproot address. This is the preferred Bitcoin address type."
+            },
+            {
+                "guid": "bitcoin-segwit",
+                "type": "other",
+                "address": "bc1qhcnhur597wpy8axl8utn3dahm0a8xmdcjklua8",
+                "description": "Bitcoin SegWit address."
+            },
+            {
+                "guid": "ethereum",
+                "type": "other",
+                "address": "0xcefe7DCA0E53DdFf64F54844E0fcFc5852ceDF7A",
+                "description": "Ethereum cryptocurrency address. Please only send Ethereum itself to this address, *not* tokens."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "donor-onetime",
+                "status": "active",
+                "name": "One-time donor",
+                "description": "One-time generous donations of whatever you wish to give",
+                "amount": 0,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": ["github-sponsors", "monero", "bitcoin-taproot", "bitcoin-segwit", "ethereum"]
+            },
+            {
+                "guid": "donor",
+                "status": "active",
+                "name": "Donor",
+                "description": "Monthly generous donations of whatever you wish to give",
+                "amount": 0,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["github-sponsors"]
+            },
+            {
+                "guid": "backer",
+                "status": "active",
+                "name": "Backer",
+                "description": "Consistently back Accrescent's infrastructure!",
+                "amount": 5,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["github-sponsors"]
+            },
+            {
+                "guid": "supporter",
+                "status": "active",
+                "name": "Supporter",
+                "description": "Make a difference in covering Accrescent's day-to-day operating costs!",
+                "amount": 10,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["github-sponsors"]
+            },
+            {
+                "guid": "member",
+                "status": "active",
+                "name": "Member",
+                "description": "Enable us to grow Accrescent's infrastructure to better serve global users!",
+                "amount": 20,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["github-sponsors"]
+            },
+            {
+                "guid": "patron",
+                "status": "active",
+                "name": "Patron",
+                "description": "Help fund a developer to work on Accrescent full-time!",
+                "amount": 50,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["github-sponsors"]
+            },
+            {
+                "guid": "sponsor",
+                "status": "active",
+                "name": "Sponsor",
+                "description": "Make a significant difference toward funding a developer to work on Accrescent full-time!",
+                "amount": 100,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["github-sponsors"]
+            }
+        ],
+        "history": [
+            {
+                "year": 2023,
+                "income": 567.94,
+                "expenses": 338.24,
+                "currency": "USD",
+                "description": "Our first year of accepting donations. Income is primarily through GitHub Sponsors, and expenses are primarily cloud hosting costs, which we expect to rise as we develop and expand our infrastructure."
+            }
+        ]
+    }
+}
