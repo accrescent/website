@@ -87,7 +87,7 @@
             {
                 "guid": "donor",
                 "status": "active",
-                "name": "Donor",
+                "name": "❤️ Donor ❤️",
                 "description": "Monthly generous donations of whatever you wish to give",
                 "amount": 0,
                 "currency": "USD",
@@ -97,7 +97,7 @@
             {
                 "guid": "backer",
                 "status": "active",
-                "name": "Backer",
+                "name": "💪 Backer 💪",
                 "description": "Consistently back Accrescent's infrastructure!",
                 "amount": 5,
                 "currency": "USD",
@@ -107,7 +107,7 @@
             {
                 "guid": "supporter",
                 "status": "active",
-                "name": "Supporter",
+                "name": "🫂 Supporter 🫂",
                 "description": "Make a difference in covering Accrescent's day-to-day operating costs!",
                 "amount": 10,
                 "currency": "USD",
@@ -117,7 +117,7 @@
             {
                 "guid": "member",
                 "status": "active",
-                "name": "Member",
+                "name": "🤝 Member 🤝",
                 "description": "Enable us to grow Accrescent's infrastructure to better serve global users!",
                 "amount": 20,
                 "currency": "USD",
@@ -127,7 +127,7 @@
             {
                 "guid": "patron",
                 "status": "active",
-                "name": "Patron",
+                "name": "🛡️ Patron 🛡️",
                 "description": "Help fund a developer to work on Accrescent full-time!",
                 "amount": 50,
                 "currency": "USD",
@@ -137,7 +137,7 @@
             {
                 "guid": "sponsor",
                 "status": "active",
-                "name": "Sponsor",
+                "name": "🏅 Sponsor 🏅",
                 "description": "Make a significant difference toward funding a developer to work on Accrescent full-time!",
                 "amount": 100,
                 "currency": "USD",
