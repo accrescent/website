@@ -44,5 +44,5 @@ anything at this point. Once your app is published, you will be notified and it
 will show up under "My apps" in the developer console
 
 [app requirements]: ../appendix/requirements.md
-[developer console]: https://dev.accrescent.app
+[developer console]: https://console.accrescent.app
 [generate one in Android Studio]: https://developer.android.com/studio/write/image-asset-studio#create-adaptive
