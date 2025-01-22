@@ -31,6 +31,29 @@ please provide test account credentials for the review process. This is
 currently not possible within the developer console, so you will need to contact
 the Accrescent team directly to provide them.
 
+### Domain verification
+
+To verify developer ownership of the apps they publish, we are phasing in a requirement for all
+newly submitted apps to verify ownership of the domain associated with their app ID. For example, if
+your app's ID is `com.example.securechat.android`, we require proof that you control the
+`example.com` domain.
+
+This is currently a manual process, but we plan to automate it more in the future. The verification
+process is as follows:
+
+1. For each app you submit to review, we will email you:
+   - A link to these instructions
+   - The domain you need to verify (e.g. `example.com`)
+   - A unique verification code (e.g. `95b9061653be1d2a904408f8297bc294`)
+2. Go to your domain registrar's website and add a DNS record with the following information,
+   replacing `<your-domain>` with your domain and `<your-verification-code>` with your verification
+   code (excluding the angle brackets):
+   - Record type: `TXT`
+   - Host/name: `_accverify.<your-domain>` (or `_accverify` with some DNS managers)
+   - Value/data/content: `<your-verification-code>`
+3. We will periodically check your domain verification status (or you can email us to let us know
+   when you have completed step 2). Once verified, the app will proceed with review.
+
 ## After you submit
 
 A reviewer will be assigned to your app after you submit it. To increase its
