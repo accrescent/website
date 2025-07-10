@@ -15,7 +15,7 @@ Accrescent, you may contact us at <contact@accrescent.app> to request being allo
 
 To upload a new app, click the "New app" button on your dashboard. You will be
 presented with an upload form. Upload the APK set (`.apks` file) you generated
-earlier as well as an app icon. The APK set must be less or equal to 150 MiB in
+earlier as well as an app icon. The APK set must be less or equal to 1 GiB in
 size and the icon must be a 512 x 512 PNG. If you already have a Play Store
 icon, you can use it here. If you don't have an icon, you can [generate one in
 Android Studio] (make sure "Play Store icon" is selected).
