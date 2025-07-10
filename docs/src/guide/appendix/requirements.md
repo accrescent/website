@@ -17,6 +17,10 @@ The following checks are run automatically on all apps before the developer
 submits them. If any of them fail, an error will show in the developer console
 and the app cannot be submitted.
 
+#### App size
+
+The size of the uploaded APK set must be no more than 1 GiB.
+
 #### Debug certificate
 
 Apps may not be signed with a debug certificate. They are [insecure by design]
